@@ -1,1 +1,269 @@
+<!DOCTYPE html>
 
+<head>
+    <meta charset="utf-8">
+    <title> 3D-SCN: Three-dimension Sequential Convolutional Networks for Music Generation of Traditional Chinese Pentatonic Scale</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Helvetica', sans-serif;
+            margin: auto;
+            max-width: 1400px;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        
+        h1 {
+            font-size: 35px;
+        }
+        
+        h2 {
+            font-size: 25px;
+            font-weight: normal;
+        }
+        
+        p {
+            font-size: 16px;
+        }
+        
+        img {
+            width: 450px;
+        }
+        
+        .ex {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align:center; font-size: 40px;"> 3D-SCN & BoYaTCN : Three-dimension Sequential Convolutional Networks for Music Generation of Traditional Chinese Pentatonic Scale</h1>
+    <h2 style="text-align:center; font-size: 30px;">Online Supplementary Material</h2>
+    <h2 style="text-align:center; font-size: 30px;">Xi'an Shiyou University</h2>
+    <h2 style="text-align:center; font-size: 30px;">Computer Science, Fanzhi Jiang</h2>
+
+
+    <h1>Generation Examples</h1>
+
+    <h2>Mongolian Examples</h2>
+
+
+    <div class="ex">
+        <audio controls>
+        <source src="https://csmt201986.github.io/mgvaeresults/results/Mongolian_example_1.mp3">
+    </audio>
+    </div>
+
+    <div class="ex">
+        <audio controls>
+        <source src="https://csmt201986.github.io/mgvaeresults/results/Mongolian_example_2.mp3">
+    </audio>
+    </div>
+
+    <div class="ex">
+        <audio controls>
+        <source src="https://csmt201986.github.io/mgvaeresults/results/Mongolian_example_3.mp3">
+    </audio>
+    </div>
+
+    <h2>Uighur Examples</h2>
+    <div class="ex">
+        <audio controls>
+        <source src="https://csmt201986.github.io/mgvaeresults/results/Uighur_example_1.mp3">
+    </audio>
+    </div>
+
+    <div class="ex">
+        <audio controls>
+        <source src="https://csmt201986.github.io/mgvaeresults/results/Uighur_example_2.mp3">
+    </audio>
+    </div>
+
+    <div class="ex">
+        <audio controls>
+        <source src="https://csmt201986.github.io/mgvaeresults/results/Uighur_example_3.mp3">
+    </audio>
+    </div>
+
+    <h2>Korean Examples</h2>
+    <div class="ex">
+        <audio controls>
+        <source src="https://csmt201986.github.io/mgvaeresults/results/Korean_example_1.mp3">
+    </audio>
+    </div>
+
+    <div class="ex">
+        <audio controls>
+        <source src="https://csmt201986.github.io/mgvaeresults/results/Korean_example_2.mp3">
+    </audio>
+    </div>
+
+    <div class="ex">
+        <audio controls>
+        <source src="https://csmt201986.github.io/mgvaeresults/results/Korean_example_3.mp3">
+    </audio>
+    </div>
+
+    <h2>Shaan Examples</h2>
+    <div class="ex">
+        <audio controls>
+        <source src="https://csmt201986.github.io/mgvaeresults/results/Shaan_example_1.mp3">
+    </audio>
+    </div>
+
+    <div class="ex">
+        <audio controls>
+        <source src="https://csmt201986.github.io/mgvaeresults/results/Shaan_example_2.mp3">
+    </audio>
+    </div>
+
+    <div class="ex">
+        <audio controls>
+        <source src="https://csmt201986.github.io/mgvaeresults/results/Shaan_example_3.mp3">
+    </audio>
+    </div>
+
+    <h2>Xiang Examples</h2>
+    <div class="ex">
+        <audio controls>
+        <source src="https://csmt201986.github.io/mgvaeresults/results/Xiang_example_1.mp3">
+    </audio>
+    </div>
+
+    <div class="ex">
+        <audio controls>
+        <source src="https://csmt201986.github.io/mgvaeresults/results/Xiang_example_2.mp3">
+    </audio>
+    </div>
+
+    <div class="ex">
+        <audio controls>
+        <source src="https://csmt201986.github.io/mgvaeresults/results/Xiang_example_3.mp3">
+    </audio>
+    </div>
+
+    <h2>Wu Examples</h2>
+    <div class="ex">
+        <audio controls>
+        <source src="https://csmt201986.github.io/mgvaeresults/results/Wu_example_1.mp3">
+    </audio>
+    </div>
+
+    <div class="ex">
+        <audio controls>
+        <source src="https://csmt201986.github.io/mgvaeresults/results/Wu_example_2.mp3">
+    </audio>
+    </div>
+
+    <div class="ex">
+        <audio controls>
+        <source src="https://csmt201986.github.io/mgvaeresults/results/Wu_example_3.mp3">
+    </audio>
+    </div>
+
+
+    <hr>
+
+
+    <h1>Several failed examples</h1>
+    <h2>Repeat the same melody pattern</h2>
+    <h3>Same rhythm pattern</h3>
+    <div class="ex">
+        <audio controls>
+        <source src="https://csmt201986.github.io/mgvaeresults/results/failed_1.mp3">
+    </audio>
+    </div>
+    <h3>Same pitch pattern</h3>
+    <div class="ex">
+        <audio controls>
+        <source src="https://csmt201986.github.io/mgvaeresults/results/failed_2.mp3">
+    </audio>
+    </div>
+
+
+
+    <h2>Several generated folk songs show the music features of Wu dilalect district, especially when the given regions belong to Han nationality areas.</h2>
+    <h3>Given label of "Xiang"</h3>
+    <div class="ex">
+        <audio controls>
+        <source src="https://csmt201986.github.io/mgvaeresults/results/failed_3.mp3">
+    </audio>
+    </div>
+
+    <h3>Given label of "Shaan"</h3>
+    <div class="ex">
+        <audio controls>
+        <source src="https://csmt201986.github.io/mgvaeresults/results/failed_4.mp3">
+    </audio>
+    </div>
+
+    <hr>
+
+    <h1>Different Regional Style versions of Molihua
+        <茉莉花>
+    </h1>
+    <h3>More example of Molihua tune family, please refer to
+        <a href="https://soundcloud.com/aicomposer_cn/sets/molihua-tune-family">Molihua tune family.</a>
+    </h3>
+
+    <h2>Northeast China Area 东北地区</h2>
+    <h3>Lishu, Jilin (吉林省梨树县)</h3>
+
+    <div class="ex">
+        <audio controls>
+        <source src="https://csmt201986.github.io/mgvaeresults/results/jilin.mp3">
+    </audio>
+    </div>
+
+    <h2>North China Area 华北地区</h2>
+    <h3>Nanpi, Hebei (河北省南皮县)</h3>
+
+    <div class="ex">
+        <audio controls>
+        <source src="https://csmt201986.github.io/mgvaeresults/results/hebei.mp3">
+    </audio>
+    </div>
+
+    <h3>Anqiu, Shandong (山东省安丘县)</h3>
+
+    <div class="ex">
+        <audio controls>
+        <source src="https://csmt201986.github.io/mgvaeresults/results/shandong.mp3">
+    </audio>
+    </div>
+
+    <h2>Jiangnan Area 江南地区</h2>
+    <h3>Luhe, Jiangsu (江苏省六合县)</h3>
+
+    <div class="ex">
+        <audio controls>
+        <source src="https://csmt201986.github.io/mgvaeresults/results/jiangsu.mp3">
+    </audio>
+    </div>
+
+
+    <h2>Northwest China Area 西北地区</h2>
+    <h3>Guyuan, Ningxia (宁夏区固原县)</h3>
+
+    <div class="ex">
+        <audio controls>
+        <source src="https://csmt201986.github.io/mgvaeresults/results/ningxia.mp3">
+    </audio>
+    </div>
+
+    <h3>Yili, Xinjiang (新疆区伊犁州-回族)</h3>
+
+    <div class="ex">
+        <audio controls>
+        <source src="https://csmt201986.github.io/mgvaeresults/results/xinjiang.mp3">
+    </audio>
+    </div>
+
+    <h2>South China Area 华南地区</h2>
+    <h3>Fuchuan, Guangxi (广西区富川县-瑶族)</h3>
+    <div class="ex">
+        <audio controls>
+        <source src="https://csmt201986.github.io/mgvaeresults/results/guangxi.mp3">
+    </audio>
+    </div>
+    <hr>
+</body>
